@@ -1,7 +1,6 @@
-### Creating new user and give all permission
+### Remove root user sudo cmd
 
 ```sql
-CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
-
-GRANT ALL PRIVILEGES ON *.* TO 'newuser'@'localhost';
+mysql > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
+mysql > FLUSH PRIVILEGES;
 ```
