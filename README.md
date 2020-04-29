@@ -35,7 +35,7 @@ Step 3 :
 
 ```sh
 sudo vim /etc/nginx/sites-available/example.com
-```sh
+
 location ~ \.php$ {
 include /etc/nginx/fastcgi_params;
 fastcgi_pass unix:/var/run/php5-fpm.sock;
