@@ -7,6 +7,8 @@ mysql > FLUSH PRIVILEGES;
 
 ```sh
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+sudo usermod -aG docker $(whoami)
 ```
 
 
