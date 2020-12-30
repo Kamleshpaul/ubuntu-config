@@ -11,6 +11,8 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 sudo usermod -aG docker $(whoami)
 
 sudo update-alternatives --config php 
+
+du -hs * | sort -rh | head -5
 ```
 
 
