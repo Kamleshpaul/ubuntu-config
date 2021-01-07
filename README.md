@@ -13,6 +13,9 @@ sudo usermod -aG docker $(whoami)
 sudo update-alternatives --config php 
 
 du -hs * | sort -rh | head -5
+
+sudo netstat -lnp | grep tcp
+
 ```
 
 
