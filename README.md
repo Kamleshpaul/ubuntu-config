@@ -1,8 +1,11 @@
 ### Remove root user sudo cmd
 
 ```sql
-mysql > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
-mysql > FLUSH PRIVILEGES;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
+
+CREATE USER 'remote'@'%' IDENTIFIED BY 'asdfghjkl002';
+GRANT ALL PRIVILEGES ON cp.* TO 'remote'@'%';
+FLUSH PRIVILEGES;
 ```
 
 ```sh
