@@ -7,6 +7,7 @@ CREATE USER 'remote'@'%' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON database.* TO 'userName'@'%';
 FLUSH PRIVILEGES;
 ```
+`sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf`
 
 ```sh
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
