@@ -3,8 +3,8 @@
 ```sql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
 
-CREATE USER 'remote'@'%' IDENTIFIED BY 'asdfghjkl002';
-GRANT ALL PRIVILEGES ON cp.* TO 'remote'@'%';
+CREATE USER 'remote'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON database.* TO 'userName'@'%';
 FLUSH PRIVILEGES;
 ```
 
