@@ -6,6 +6,9 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
 CREATE USER 'remote'@'%' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON database.* TO 'userName'@'%';
 FLUSH PRIVILEGES;
+
+SHOW BINARY LOGS;
+PURGE BINARY LOGS BEFORE DATE(NOW() - INTERVAL 3 DAY);
 ```
 `sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf`
 
