@@ -1,4 +1,4 @@
-### Remove root user sudo cmd
+### Helpers
 
 ```sql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
@@ -22,6 +22,8 @@ sudo update-alternatives --config php
 du -hsx * | sort -rh | head -10
 
 sudo netstat -lnp | grep tcp
+composer install --optimize-autoloader --no-dev
+
 
 ```
 
