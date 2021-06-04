@@ -9,6 +9,8 @@ FLUSH PRIVILEGES;
 
 SHOW BINARY LOGS;
 PURGE BINARY LOGS BEFORE DATE(NOW() - INTERVAL 3 DAY);
+
+sudo apt autoremove --purge snapd
 ```
 `sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf`
 
