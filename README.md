@@ -30,7 +30,7 @@ composer install --optimize-autoloader --no-dev
 ### caddy
 
 ```sh
-journalctl -u caddy --no-pager | less
+sudo rm -rf var/lib/caddy/.local
 ```
 
 
