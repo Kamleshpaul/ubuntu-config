@@ -25,8 +25,12 @@ du -hsx * | sort -rh | head -10
 
 sudo netstat -lnp | grep tcp
 composer install --optimize-autoloader --no-dev
+```
 
+### caddy
 
+```sh
+journalctl -u caddy --no-pager | less
 ```
 
 
