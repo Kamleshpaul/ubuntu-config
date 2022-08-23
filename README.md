@@ -84,3 +84,9 @@ fastcgi_read_timeout 300;
 ```
 
 then restart server
+
+
+
+```
+php -i | grep "\.ini"
+```
