@@ -25,6 +25,8 @@ du -hsx * | sort -rh | head -10
 
 du -h --max-depth=1 /var
 
+sudo ncdu /
+
 sudo netstat -lnp | grep tcp
 composer install --optimize-autoloader --no-dev
 ```
