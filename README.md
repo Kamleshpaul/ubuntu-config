@@ -103,3 +103,17 @@ then restart server
 ```
 php -i | grep "\.ini"
 ```
+
+### change hostname
+```sh
+sudo nano /etc/hostname
+
+prod
+```
+
+```sh
+sudo nano /etc/hosts
+
+127.0.1.1 prod
+
+```
