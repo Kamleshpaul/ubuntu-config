@@ -38,6 +38,15 @@ sudo rm -rf var/lib/caddy/.local
 ```
 
 
+
+### docker
+
+```sh
+docker system df
+docker image prune -a --filter "until=24h"
+docker system prune -a
+```
+
 https://www.websitevidya.com/fix-504-gateway-timeout-nginx-error/ 
 
 nginx timeout
