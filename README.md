@@ -118,7 +118,7 @@ sudo nano /etc/hosts
 
 ```
 
-## set npm gloabl
+## set npm global
 
 ```sh
 export PATH=~/.npm-global/bin:$PATH
