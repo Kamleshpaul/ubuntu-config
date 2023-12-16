@@ -117,3 +117,9 @@ sudo nano /etc/hosts
 127.0.1.1 prod
 
 ```
+
+## set npm gloabl
+
+```sh
+export PATH=~/.npm-global/bin:$PATH
+```
