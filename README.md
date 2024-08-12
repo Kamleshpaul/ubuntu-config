@@ -123,3 +123,8 @@ sudo nano /etc/hosts
 ```sh
 export PATH=~/.npm-global/bin:$PATH
 ```
+
+# linux space checker
+```sh
+sudo apt install ncdu
+```
