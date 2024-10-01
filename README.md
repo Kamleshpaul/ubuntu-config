@@ -128,3 +128,8 @@ export PATH=~/.npm-global/bin:$PATH
 ```sh
 sudo apt install ncdu
 ```
+
+# check all open port
+```sh
+sudo ss -tuln
+```
