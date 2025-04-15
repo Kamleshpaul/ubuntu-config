@@ -1,5 +1,68 @@
 ### Helpers
 
+
+### 🧪 Check for OOM Events (Out of Memory Killer Logs)
+```bash
+sudo grep -i 'oom' /var/log/syslog
+```
+
+This shows if any process was killed due to low memory.
+
+---
+
+### 📈 See Top Memory-Consuming Processes
+```bash
+ps aux --sort=-%mem | head -n 15
+```
+
+Lists the top 15 processes sorted by memory usage.
+
+---
+
+### 💾 Show Active Swap
+```bash
+swapon --show
+```
+
+Shows if swap is enabled and how much is in use.
+
+---
+
+### 📊 Show Total Memory and Swap Usage
+```bash
+free -h
+```
+
+Displays memory, used vs. free, and swap usage in human-readable format.
+
+---
+
+### 🧠 Check Memory Pressure (vmstat)
+```bash
+vmstat 1 5
+```
+
+Shows memory, swap, I/O, and CPU stats every 1 second for 5 times.
+
+---
+
+
+### 🔍 Check System Logs from the Past Minute
+If you're watching for a crash:
+```bash
+sudo journalctl --since "1 minute ago"
+```
+
+---
+
+### 🧹 Optional: Clean Cache Memory (careful)
+If you're manually tuning:
+```bash
+sudo sync; echo 3 | sudo tee /proc/sys/vm/drop_caches
+```
+
+---
+
 ```sql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '';
 
